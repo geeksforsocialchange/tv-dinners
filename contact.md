@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Contact
+permalink: /contact/
 ---
-
-## Contact
 
  * Phone Acorn: [0754 9673865](tel:0754 9673865)
  * Email GFSC: [kim@gfsc.studio](mailto:kim@gfsc.studio)
