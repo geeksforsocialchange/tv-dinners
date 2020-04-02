@@ -4,12 +4,20 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+## Contact
 
-### More Information
+ * Phone Acorn: [0754 9673865](tel:0754 9673865)
+ * Email GFSC: [kim@gfsc.studio](mailto:kim@gfsc.studio)
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+# Organisers
 
-[email@domain.com](mailto:email@domain.com)
+_Add logo, bio, link for each_
+
+## Old Abbey Taphouse
+
+## Acorn
+
+## Geeks for Social Change
+
+## Gaskell Garden Project
