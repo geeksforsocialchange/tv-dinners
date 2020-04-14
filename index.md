@@ -12,7 +12,9 @@ The [Old Abbey Taphouse](http://theoldabbeytaphouse.co.uk/), [Geeks for Social C
 
 We can also help with collecting groceries, provide checkin calls, help with gas and electric payment, pick up your prescriptions for you, and other services on request. We are run entirely by volunteers so may not be able to fulfil all requests.
 
-[To register for the service, please fill in this form](https://airtable.com/shraAVJA7YQGXv1EG){:.f4 .grow .no-underline .br-pill .ph3 .pv3 .mv3 .mb2 .dib .white .bg-dark-pink}
+We will begin delivering to the Aquarius and Monton Estates and Greenheys Lane from 20th April 2020. We welcome registrations from residents with M15 postcodes so we can get an idea of demand.
+
+[To register for the service, please fill in this form](https://airtable.com/shr011U0OscveCvHl){:.f4 .grow .no-underline .br-pill .ph3 .pv3 .mv3 .mb2 .dib .white .bg-dark-pink}
 {:.tc}
 
 _If you need support to complete this form then please call ACORN on [0754 9673865](tel:07549673865) who can fill it in for you._
