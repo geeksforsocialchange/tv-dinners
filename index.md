@@ -4,6 +4,7 @@ title: Welcome to Taphouse TV Dinners
 ---
 
 # Welcome to Taphouse TV Dinners
+
 {:.mb0}
 
 **Do you live in Hulme, Manchester and want cooked meals delivered to you during the Covid-19 crisis?**
@@ -22,11 +23,14 @@ _If you need support to complete this form then please call ACORN on [0754 96738
 We use a small team of volunteers who have a low chance of health complications from Covid-19. We are undertaking training on how to make food preperation as safe as possible and the use of masks and gloves. Food for each meal will be cooked by one person. Deliveries will be left outside doors with no contact made.
 
 # Can you help?
+
 {:.mb0}
 
 We are in need of some supplies to increase our food production, set up a community radio station, and start a newsletter. If you can provide any of the below then please get in touch with the relevant person.
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrpBXhasbybORfX2?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+<div id="wishlistTable"></div>
 
 # Updates
 
@@ -42,5 +46,7 @@ We are in need of some supplies to increase our food production, set up a commun
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-  {% endfor %}
+
+{% endfor %}
+
 </div>
