@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import * as api from "api.js";
+import * as api from "./api.js";
 
 const Table = props => {
   const { variant } = props;

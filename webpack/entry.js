@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Table from "./components/Table";
+import Table from "./components/Table.jsx";
 
 const wishlistTable = document.getElementById("#wishlistTable");
 if (wishlistTable) {
