@@ -41,6 +41,27 @@ We will do our best to cater for all diets and allergies but please be aware we 
 
 # Can you help?
 
+## Donations
+
+We welcome donations to support this project. Please send them directly to Gaskell Garden Project's PayPal using the button below.
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="thegaskellgardenproject@gmail.com" />
+<input type="hidden" name="item_name" value="Taphouse TV Dinners" />
+<input type="hidden" name="currency_code" value="GBP" />
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+Donations can also be sent by bank transfer to:
+
+ * **Sort code:** 08 92 99  
+ * **Account number:** 65789722
+
+
+## Supplies and volunteers
+
 {:.mb0}
 
 We are in need of some supplies to increase our food production, set up a community radio station, and start a newsletter. If you can provide any of the below then please get in touch with the relevant person.
