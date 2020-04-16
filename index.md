@@ -9,7 +9,7 @@ title: Welcome to Taphouse TV Dinners
 
 **Do you live in Hulme, Manchester and want cooked meals delivered to you during the Covid-19 crisis?**
 
-The [Old Abbey Taphouse](http://theoldabbeytaphouse.co.uk/), [Geeks for Social Change](http://gfsc.studio/), [ACORN](https://acorntheunion.org.uk/), and [Gaskell Garden Project](https://gaskellgardenproject.co.uk/) have collaborated to provide a free or pay-as-you-feel meal service for residents. Suggested donation is £3 per meal. If you can't afford this don't worry, **this service is for you**, please sign up and let us feed you through this difficult time.
+The [Old Abbey Taphouse](http://theoldabbeytaphouse.co.uk/), [Geeks for Social Change](http://gfsc.studio/), [ACORN](https://acorntheunion.org.uk/), and [Gaskell Garden Project](https://gaskellgardenproject.co.uk/) have collaborated to provide a free or pay-as-you-feel meal service for residents, suggested donation £2 per meal. If you can't afford this don't worry, **this service is for you**, please sign up and let us feed you through this difficult time.
 
 We can also help with collecting groceries, provide checkin calls, help with gas and electric payment, pick up your prescriptions for you, and other services on request. We are run entirely by volunteers so may not be able to fulfil all requests.
 
