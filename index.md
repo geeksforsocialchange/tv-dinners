@@ -15,9 +15,7 @@ We can also help with collecting groceries, provide checkin calls, help with gas
 
 ## Eligibility
 
-We are currently seeking expressions of interest from residents who live in the Aquarius and Monton Estates and Greenheys Lane, where we will initially pilot the service. We will begin a "soft launch" from Mon 20th April 2020.
-
-We also welcome registrations from residents with M15 postcodes so we can get an idea of demand outside this area.
+We welcome registrations from M15 postcodes and people slightly outside this area who have a high need for the service. We are currently piloting the scheme and slowly building to meet demand so might not be able to meet all requests straight away.
 
 The service is open to everyone in these areas regardless of age or ability.
 
