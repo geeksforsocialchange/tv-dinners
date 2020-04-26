@@ -6,5 +6,5 @@
 /.jekyl-cache/**
 /.vscode/**
 /.yarn/**
-/dist/**
+/js/dist/**
 /images/**

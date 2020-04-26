@@ -10,4 +10,4 @@ Gemfile.lock
 node_modules
 .yarn
 .pnp.*
-dist
+js/dist
