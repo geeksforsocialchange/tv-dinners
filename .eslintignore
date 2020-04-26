@@ -1,0 +1,10 @@
+/_includes/**
+/_layouts/**
+/_posts/**
+/_sass/**
+/_site/**
+/.jekyl-cache/**
+/.vscode/**
+/.yarn/**
+/dist/**
+/images/**
