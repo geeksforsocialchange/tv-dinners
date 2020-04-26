@@ -4,9 +4,12 @@
   "description": "Website for TV dinners project",
   "main": "bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack -w",
+    "start": "yarn run build && jekyll serve",
+    "watch:webpack": "webpack -w",
+    "watch:jekyll": "jekyll serve --livereload",
+    "watch": "concurrently --kill-others \"yarn:watch:*\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
   },
   "repository": {
@@ -36,6 +39,7 @@
     "@yarnpkg/pnpify": "^2.0.0-rc.21",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
     "eslint": "^6.8.0",
     "eslint-import-resolver-node": "^0.3.3",
     "eslint-plugin-import": "^2.20.2",
