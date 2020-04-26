@@ -9,9 +9,12 @@ Taphouse TV Dinners uses Jekyll for static assets and React to pull in informati
  1. `gem install bundler`
  1. `bundle install`
  1. Install node using e.g. `brew install nodejs`
- 1. `npm install`
+ 1. Install yarn: `npm install -g yarn`
+ 1. In tv-dinners repo set yarn version to yarn v2 with: `yarn set version berry`
+ 1. Run `yarn`
 
 ## Development
 
- 1. To start a server run `jekyll serve --livereload`
- 1. To start webpack run `npm run watch`
+ 1. To start the site locally, run `yarn start`
+ 1. To start the site with a watch, run `yarn run watch`
+ 1. If using visual studio code/codium and eslint extension is not working, run `yarn pnpify --sdk`
