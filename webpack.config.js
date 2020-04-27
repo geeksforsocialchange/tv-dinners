@@ -1,12 +1,13 @@
-const path = require("path");
+const path = require('path');
+const PnpWebpackPlugin = require('pnp-webpack-plugin');
 
 module.exports = {
-  // webpack folder's entry js - excluded from jekll's build process.
-  entry: "./webpack/entry.js",
+  // webpack folder's entry js - excluded from jekyll's build process.
+  entry: './js/src/entry.js',
   output: {
     // we're going to put the generated file in the assets folder so jekyll will grab it.
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "javascripts")
+    filename: 'tv-dinners.bundle.js',
+    path: path.resolve(__dirname, 'js/dist'),
   },
   module: {
     rules: [
@@ -14,10 +15,20 @@ module.exports = {
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
-      }
-    ]
+          loader: 'babel-loader',
+        },
+      },
+    ],
   },
-  mode: "development"
+  mode: 'development',
+  resolve: {
+    plugins: [
+      PnpWebpackPlugin,
+    ],
+  },
+  resolveLoader: {
+    plugins: [
+      PnpWebpackPlugin.moduleLoader(module),
+    ],
+  },
 };
