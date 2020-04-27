@@ -5,7 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "build": "webpack",
-    "start": "yarn run build && jekyll serve",
+    "start": "yarn build && jekyll serve",
     "watch:webpack": "webpack -w",
     "watch:jekyll": "jekyll serve --livereload",
     "watch": "concurrently --kill-others \"yarn:watch:*\"",

@@ -1,12 +1,12 @@
 const path = require('path');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
+// const { SourceMapDevToolPlugin } = require('webpack');
 
 module.exports = {
-  // webpack folder's entry js - excluded from jekyll's build process.
   entry: './js/src/entry.js',
+  mode: 'development',
   output: {
-    // we're going to put the generated file in the assets folder so jekyll will grab it.
-    filename: 'tv-dinners.bundle.js',
+    filename: 'tvdinners.js',
     path: path.resolve(__dirname, 'js/dist'),
   },
   module: {
@@ -16,19 +16,39 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['@babel/plugin-transform-runtime']
+          },
         },
-      },
+      }
     ],
   },
-  mode: 'development',
   resolve: {
+    extensions: ['.js', '.jsx'],
     plugins: [
       PnpWebpackPlugin,
     ],
   },
   resolveLoader: {
     plugins: [
-      PnpWebpackPlugin.moduleLoader(module),
+      PnpWebpackPlugin.moduleLoader(module)
     ],
   },
+  devtool: 'source-map',
+  // plugins: [
+  //   new SourceMapDevToolPlugin({
+  //     test: /\.(js|jsx)?$/,
+  //     include: /js\/src/,
+  //     exclude: /node_modules/,
+  //     filename: 'tvdinners.js.map',
+  //     module: true,
+  //     columns: true,
+  //   })
+  // ],
+  target: 'web',
+  watchOptions: {
+    ignored: /dist/,
+    aggregateTimeout: 1000,
+  }
 };

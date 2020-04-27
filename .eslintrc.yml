@@ -26,6 +26,7 @@
       version: 'detect'
     import/extensions:
       - '.js'
+      - '.jsx'
     import/ignore:
       - '\\.(css|scss|json)$'
     import/resolver: node
@@ -159,6 +160,7 @@
       - 'error'
       - 'always'
       - js: 'never'
+      - jsx: 'never'
     import/newline-after-import: 'error'
     import/no-unresolved: 'error'
     import/no-webpack-loader-syntax: 'error'
