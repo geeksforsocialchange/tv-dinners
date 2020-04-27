@@ -6,6 +6,12 @@ _site
 .bundle
 .sass-cache
 node_modules
-.yarn
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
 .pnp.*
+
+.vscode
+
 js/dist
