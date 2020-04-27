@@ -8,6 +8,7 @@ module.exports = {
   output: {
     filename: 'tvdinners.js',
     path: path.resolve(__dirname, 'js/dist'),
+    sourceMapFilename: 'tvdinners.js.map'
   },
   module: {
     rules: [
@@ -15,7 +16,7 @@ module.exports = {
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: require.resolve('babel-loader'),
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
             plugins: ['@babel/plugin-transform-runtime']
@@ -39,11 +40,8 @@ module.exports = {
   // plugins: [
   //   new SourceMapDevToolPlugin({
   //     test: /\.(js|jsx)?$/,
-  //     include: /js\/src/,
   //     exclude: /node_modules/,
   //     filename: 'tvdinners.js.map',
-  //     module: true,
-  //     columns: true,
   //   })
   // ],
   target: 'web',
