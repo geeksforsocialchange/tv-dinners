@@ -24,7 +24,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     plugins: [
-      PnpWebpackPlugin,
+      PnpWebpackPlugin
     ],
   },
   resolveLoader: {
