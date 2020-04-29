@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@material-ui/core';
+import TableClass from '../tables/table';
 import * as api from '../api';
 
 const useStyles = makeStyles({
@@ -16,22 +11,21 @@ const useStyles = makeStyles({
   },
 });
 
-const TableComponent = ({ name }) => {
+const TableComponent = ({ table }) => {
   const classes = useStyles();
   const [records, setRecords] = useState([]);
 
   useEffect(() => {
-    async function fetchRecords(_name) {
-      const data = await api.getAirtable(_name);
+    async function fetchRecords() {
+      const data = await api.getAirtable(table);
       setRecords(data);
     }
-    fetchRecords(name);
-  }, [name]);
+    fetchRecords();
+  }, [table]);
 
   if (records.length === 0) return null;
 
   const columns = Object.keys(records[0].fields);
-
   return (
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label='simple table'>
@@ -45,7 +39,7 @@ const TableComponent = ({ name }) => {
 };
 
 TableComponent.propTypes = {
-  name: PropTypes.string.isRequired,
+  table: PropTypes.instanceOf(TableClass),
 };
 
 function generateRow(values, index = 0) {

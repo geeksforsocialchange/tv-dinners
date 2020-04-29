@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Table from './components/table';
+import { wishlist } from './tables';
 
-const wishlistTable = document.getElementById('wishlistTable');
-if (wishlistTable) ReactDOM.render(<Table name='Wishlist' />, wishlistTable);
+const wishlistDiv = document.getElementById('wishlistTable');
+if (wishlistDiv) ReactDOM.render(<Table table={wishlist} />, wishlistDiv);

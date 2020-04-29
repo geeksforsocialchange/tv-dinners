@@ -85,9 +85,6 @@
     object-curly-spacing: 
       - 'error'
       - 'always'
-    padded-blocks:
-      - 'error'
-      - classes: 'always'
     quotes: 
       - 'error'
       - 'single'
