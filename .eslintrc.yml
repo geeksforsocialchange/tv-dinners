@@ -42,7 +42,9 @@
 
   rules:
     ### eslint core rules ###
-    brace-style: 'warn'
+    brace-style:
+      - 'error'
+      - 'stroustrup'
     comma-dangle: 
       - 'error'
       - 'always-multiline'

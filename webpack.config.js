@@ -1,9 +1,29 @@
+/* eslint-disable no-console */
 const process = require('process');
+const fs = require('fs');
 const path = require('path');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
 const { DefinePlugin } = require('webpack');
 
-const apiKey = process.env.AIRTABLE_API_KEY || require('./.airtable/apiKey');
+const apiKey = (() => {
+  let key = process.env.AIRTABLE_API_KEY;
+  if (key) {
+    console.log('Found API Key from environment variable');
+    return key;
+  }
+
+  try {
+    key = fs.readFileSync('./.airtable/apiKey', 'utf-8');
+    if (key) {
+      console.log('Found API Key from local file');
+      return key;
+    }
+    else throw 'No Airtable API Key found';
+  }
+  catch (e) {
+    throw e;
+  }
+})();
 
 module.exports = {
   entry: './js/src/entry.js',
