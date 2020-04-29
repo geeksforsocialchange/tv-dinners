@@ -1,6 +1,9 @@
+const process = require('process');
 const path = require('path');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
-// const { SourceMapDevToolPlugin } = require('webpack');
+const { DefinePlugin } = require('webpack');
+
+const apiKey = process.env.AIRTABLE_API_KEY || require('./.airtable/apiKey');
 
 module.exports = {
   entry: './js/src/entry.js',
@@ -8,7 +11,7 @@ module.exports = {
   output: {
     filename: 'tvdinners.js',
     path: path.resolve(__dirname, 'js/dist'),
-    sourceMapFilename: 'tvdinners.js.map'
+    sourceMapFilename: 'tvdinners.js.map',
   },
   module: {
     rules: [
@@ -18,31 +21,30 @@ module.exports = {
         use: {
           loader: require.resolve('babel-loader'),
         },
-      }
+      },
     ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
     plugins: [
-      PnpWebpackPlugin
+      PnpWebpackPlugin,
     ],
   },
   resolveLoader: {
     plugins: [
-      PnpWebpackPlugin.moduleLoader(module)
+      PnpWebpackPlugin.moduleLoader(module),
     ],
   },
   devtool: 'source-map',
-  // plugins: [
-  //   new SourceMapDevToolPlugin({
-  //     test: /\.(js|jsx)?$/,
-  //     exclude: /node_modules/,
-  //     filename: 'tvdinners.js.map',
-  //   })
-  // ],
+  plugins: [
+    new DefinePlugin({
+      'AIRTABLE_URL': JSON.stringify('https://api.airtable.com/v0/appGxF9km8lrfbaf0'),
+      'AIRTABLE_API_KEY': JSON.stringify(apiKey),
+    }),
+  ],
   target: 'web',
   watchOptions: {
     ignored: /dist/,
     aggregateTimeout: 1000,
-  }
+  },
 };

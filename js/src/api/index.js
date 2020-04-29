@@ -1,13 +1,13 @@
-import process from 'process';
 import axios from 'axios';
 
-const airtableApiKey = process.env.AIRTABLE_API_KEY;
-
-const airtableURL = 'https://api.airtable.com/v0/WishliappGxF9km8lrfbaf0';
-
 export const getAirtable = async tableName => {
-  const data = await axios.get(`${airtableURL}/${tableName}?view=Grid%20view`, {
-    headers: { Authorization: `Bearer ${airtableApiKey}` },
-  });
-  return data.records;
+  const { data: { records } } = await axios.get(
+    `${AIRTABLE_URL}/${tableName}?view=Public%20view`,
+    {
+      headers: {
+        Authorization: `Bearer ${AIRTABLE_API_KEY}`,
+      },
+    },
+  );
+  return records;
 };
