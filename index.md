@@ -41,21 +41,21 @@ We will do our best to cater for all diets and allergies but please be aware we 
 
 ## Donations
 
-We welcome donations to support this project. Please send them directly to Gaskell Garden Project's PayPal using the button below.
+We welcome donations to support this project. Please send them directly to the Old Abbey Taphouse (registered as Galivantes Productions Ltd) via PayPal using the button below.
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="thegaskellgardenproject@gmail.com" />
+<input type="hidden" name="business" value="galivantes@gmail.com" />
 <input type="hidden" name="item_name" value="Taphouse TV Dinners" />
 <input type="hidden" name="currency_code" value="GBP" />
 <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
 </form>
 
-Donations can also be sent by bank transfer to:
+Donations can also be sent by bank transfer: 
 
- * **Sort code:** 08 92 99  
- * **Account number:** 65789722
+ * **Sort code:** 08 92 99
+ * **Account number:** 65868410
 
 
 ## Supplies and volunteers
