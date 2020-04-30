@@ -1,3 +1,3 @@
 import Table from './table';
 
-export const wishlist = new Table('Wishlist', ['Name', 'Contact']);
+export const wishlist = new Table('Wishlist', ['Name', 'Email', 'Phone']);

@@ -23,14 +23,12 @@
   },
   "homepage": "https://tvdinners.club",
   "dependencies": {
-    "@material-ui/core": "^4.9.12",
     "airtable": "^0.8.1",
     "axios": "^0.19.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-addons-update": "^15.6.2",
-    "react-dom": "^16.13.1",
-    "tiny-warning": "^1.0.3"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
