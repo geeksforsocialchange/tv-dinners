@@ -1,46 +1,42 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import TableClass from '../tables/table';
 import * as api from '../api';
 
-const Table = props => {
-  const { variant } = props;
+const TableComponent = ({ table }) => {
+  const [records, setRecords] = useState([]);
 
-  // Holds the state value of records
-  const [rows, setRows] = useState([]);
+  useEffect(() => {
+    async function fetchRecords() {
+      const data = await api.getAirtable(table);
+      setRecords(data);
+    }
+    fetchRecords();
+  }, [table]);
 
-  // RefObj to map the variant keyword to the Airtable name and the columns to show
-  const refObj = {
-    wishlistTable: { name: 'Wishlist', columns: ['Name', 'Contact'] },
-  };
+  if (records.length === 0) return null;
 
-  // Side effect will run once on mounting, call the API and store the response in the rows value
-  useEffect(async () => {
-    const data = await api.getAirtable(refObj[variant]);
-    setRows(data);
-  }, []);
-
+  const columns = Object.keys(records[0].fields);
   return (
-    <table>
-      <thead>
-        <tr>
-          {refObj[variant].columns.map(column => <td>{column}</td>)}
-        </tr>
-      </thead>
+    <table className='table'>
+      <thead>{generateRow(columns)}</thead>
       <tbody>
-        {rows.map(() => {
-          return (
-            <tr>
-              {refObj[variant].columns.map(column => <td>{rows.fields[column]}</td>)}
-            </tr>
-          );
-        })}
+        {records.map(({ fields }, index) => generateRow(Object.values(fields), index))}
       </tbody>
     </table>
   );
 };
 
-Table.propTypes = {
-  variant: PropTypes.string,
+TableComponent.propTypes = {
+  table: PropTypes.instanceOf(TableClass),
 };
 
-export default Table;
+function generateRow(values, index = 0) {
+  return (
+    <tr key={index}>
+      {values.map((val, key) => <td key={key}>{val}</td>)}
+    </tr>
+  );
+};
+
+export default TableComponent;

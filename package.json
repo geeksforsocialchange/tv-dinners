@@ -5,9 +5,9 @@
   "main": "bundle.js",
   "scripts": {
     "build": "webpack",
-    "start": "yarn run build && jekyll serve",
+    "start": "yarn build && jekyll serve --livereload",
     "watch:webpack": "webpack -w",
-    "watch:jekyll": "jekyll serve --livereload",
+    "watch:jekyll": "jekyll serve",
     "watch": "concurrently --kill-others \"yarn:watch:*\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
@@ -36,6 +36,7 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@babel/register": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
     "@yarnpkg/pnpify": "^2.0.0-rc.21",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
@@ -46,6 +47,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
     "pnp-webpack-plugin": "^1.6.4",

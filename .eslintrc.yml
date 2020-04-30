@@ -10,6 +10,7 @@
 
   plugins:
     - 'react'
+    - 'react-hooks'
     - 'jsx-a11y'
     - 'import'
     - 'promise'
@@ -26,13 +27,24 @@
       version: 'detect'
     import/extensions:
       - '.js'
+      - '.jsx'
     import/ignore:
       - '\\.(css|scss|json)$'
-    import/resolver: node
+    import/resolver: 
+      node:
+        extensions:
+          - '.js'
+          - '.jsx'
+
+  globals:
+    AIRTABLE_URL: true
+    AIRTABLE_API_KEY: true
 
   rules:
     ### eslint core rules ###
-    brace-style: 'warn'
+    brace-style:
+      - 'error'
+      - 'stroustrup'
     comma-dangle: 
       - 'error'
       - 'always-multiline'
@@ -75,9 +87,6 @@
     object-curly-spacing: 
       - 'error'
       - 'always'
-    padded-blocks:
-      - 'error'
-      - classes: 'always'
     quotes: 
       - 'error'
       - 'single'
@@ -85,7 +94,7 @@
     strict: 'off'
     valid-typeof: 'error'
 
-    ### React rules ###
+    ### react rules ###
     react/jsx-boolean-value: 'error'
     react/jsx-closing-bracket-location: 
       - 'error'
@@ -109,6 +118,10 @@
     react/no-string-refs: 'error'
     react/prop-types: 'error'
     react/self-closing-comp: 'error'
+
+    ### react-hooks rules ###
+    react-hooks/rules-of-hooks: 'error'
+    react-hooks/exhaustive-deps: 'warn'
 
     ### jsx-a11y rules ###
     jsx-a11y/accessible-emoji: 'warn'
@@ -155,10 +168,6 @@
     jsx-a11y/tabindex-no-positive: 'warn'
 
     ### import rules ###
-    import/extensions:
-      - 'error'
-      - 'always'
-      - js: 'never'
     import/newline-after-import: 'error'
     import/no-unresolved: 'error'
     import/no-webpack-loader-syntax: 'error'

@@ -1,13 +1,37 @@
+/* eslint-disable no-console */
+const process = require('process');
+const fs = require('fs');
 const path = require('path');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
+const { DefinePlugin } = require('webpack');
+
+const apiKey = (() => {
+  let key = process.env.AIRTABLE_API_KEY;
+  if (key) {
+    console.log('Found API Key from environment variable');
+    return key;
+  }
+
+  try {
+    key = fs.readFileSync('./.airtable/apiKey', 'utf-8');
+    if (key) {
+      console.log('Found API Key from local file');
+      return key;
+    }
+    else throw 'No Airtable API Key found';
+  }
+  catch (e) {
+    throw e;
+  }
+})();
 
 module.exports = {
-  // webpack folder's entry js - excluded from jekyll's build process.
   entry: './js/src/entry.js',
+  mode: 'development',
   output: {
-    // we're going to put the generated file in the assets folder so jekyll will grab it.
-    filename: 'tv-dinners.bundle.js',
+    filename: 'tvdinners.js',
     path: path.resolve(__dirname, 'js/dist'),
+    sourceMapFilename: 'tvdinners.js.map',
   },
   module: {
     rules: [
@@ -15,13 +39,13 @@ module.exports = {
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: require.resolve('babel-loader'),
         },
       },
     ],
   },
-  mode: 'development',
   resolve: {
+    extensions: ['.js', '.jsx'],
     plugins: [
       PnpWebpackPlugin,
     ],
@@ -30,5 +54,17 @@ module.exports = {
     plugins: [
       PnpWebpackPlugin.moduleLoader(module),
     ],
+  },
+  devtool: 'source-map',
+  plugins: [
+    new DefinePlugin({
+      'AIRTABLE_URL': JSON.stringify('https://api.airtable.com/v0/appGxF9km8lrfbaf0'),
+      'AIRTABLE_API_KEY': JSON.stringify(apiKey),
+    }),
+  ],
+  target: 'web',
+  watchOptions: {
+    ignored: /dist/,
+    aggregateTimeout: 1000,
   },
 };

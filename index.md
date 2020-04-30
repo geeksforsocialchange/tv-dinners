@@ -64,6 +64,4 @@ Donations can also be sent by bank transfer:
 
 We are in need of some supplies to increase our food production, set up a community radio station, and start a newsletter. If you can provide any of the below then please get in touch with the relevant person.
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrpBXhasbybORfX2?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-
 <div id="wishlistTable"></div>
