@@ -27,7 +27,6 @@ const TableComponent = ({ table }) => {
   );
 };
 
-
 TableComponent.propTypes = {
   table: PropTypes.instanceOf(TableClass),
 };
