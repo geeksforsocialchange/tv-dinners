@@ -18,7 +18,7 @@ const TableComponent = ({ table }) => {
 
   const columns = Object.keys(records[0].fields);
   return (
-    <table>
+    <table className='table'>
       <thead>{generateRow(columns)}</thead>
       <tbody>
         {records.map(({ fields }, index) => generateRow(Object.values(fields), index))}
