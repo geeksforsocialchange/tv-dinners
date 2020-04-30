@@ -19,3 +19,7 @@ Taphouse TV Dinners uses Jekyll for static assets and React to pull in informati
  1. To start the site locally, run `yarn start`
  1. To start the site with a watch, run `yarn run watch`
  1. If using Visual Studio Code/Codium and eslint extension is not working, run `yarn pnpify --sdk`
+
+## Production
+
+ 1. Add your production AirTable API Key in `Settings -> Secrets` in the GitHub repository
