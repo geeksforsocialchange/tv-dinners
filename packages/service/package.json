@@ -1,0 +1,21 @@
+{
+  "name": "@tv-dinners/service",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "dev": "need to implement dev script",
+    "build": "probably not needed for the server?",
+    "start": "node -r esm app.js"
+  },
+  "dependencies": {
+    "@tv-dinners/common": "1.0.0",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6"
+  }
+}

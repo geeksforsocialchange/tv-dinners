@@ -37,6 +37,7 @@
           - '.jsx'
 
   globals:
+    API_LOCATION: true
     AIRTABLE_URL: true
     AIRTABLE_API_KEY: true
 

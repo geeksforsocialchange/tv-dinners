@@ -1,0 +1,9 @@
+{
+  "name": "@tv-dinners/common",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.9.6",
+    "lodash": "^4.17.15"
+  }
+}

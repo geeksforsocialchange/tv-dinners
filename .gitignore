@@ -14,5 +14,5 @@ node_modules
 
 .vscode
 
-js/dist
-.airtable/apiKey*
+dist
+packages/service/.env

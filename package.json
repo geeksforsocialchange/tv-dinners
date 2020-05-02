@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Website for TV dinners project",
   "main": "bundle.js",
+  "private": true,
+  "workspaces": [
+    "packages/**"
+  ],
   "scripts": {
+    "dev": "",
     "build": "webpack",
     "start": "yarn build && jekyll serve --livereload",
     "watch:webpack": "webpack -w",
@@ -23,12 +28,7 @@
   },
   "homepage": "https://tvdinners.club",
   "dependencies": {
-    "airtable": "^0.8.1",
-    "axios": "^0.19.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-addons-update": "^15.6.2",
-    "react-dom": "^16.13.1"
+    "react": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -36,7 +36,7 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@babel/register": "^7.9.0",
-    "@babel/runtime": "^7.9.2",
+    "@babel/runtime": "^7.9.6",
     "@yarnpkg/pnpify": "^2.0.0-rc.21",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",

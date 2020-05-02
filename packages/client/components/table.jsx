@@ -1,34 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import TableClass from '../tables/table';
-import * as api from '../api';
+import axios from 'axios';
 
-const TableComponent = ({ table }) => {
-  const [records, setRecords] = useState([]);
+const TableComponent = ({ name }) => {
+  const [data, setData] = useState({});
 
   useEffect(() => {
     async function fetchRecords() {
-      const data = await api.getAirtable(table);
-      setRecords(data);
+      const { data } = await axios.get(`${API_LOCATION}/table?name=${name}`);
+      setData(data);
     }
     fetchRecords();
-  }, [table]);
+  }, [name]);
 
-  if (records.length === 0) return null;
+  if (Object.keys(data).length === 0) return null;
 
-  const columns = Object.keys(records[0].fields);
+  const { columns, rows } = data;
   return (
     <table className='table'>
       <thead>{generateRow(columns)}</thead>
       <tbody>
-        {records.map(({ fields }, index) => generateRow(Object.values(fields), index))}
+        {rows.map((row, index) => generateRow(Object.values(row), index))}
       </tbody>
     </table>
   );
 };
 
 TableComponent.propTypes = {
-  table: PropTypes.instanceOf(TableClass),
+  name: PropTypes.string.isRequired,
 };
 
 function generateRow(values, index = 0) {
