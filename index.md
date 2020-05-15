@@ -25,7 +25,7 @@ The service is open to everyone in these areas regardless of age or ability.
 
 To register for the service, please fill the form below. We will phone you to confirm your details and welcome you to the project.
 
-[Register for Taphouse TV Dinners!](https://airtable.com/shr011U0OscveCvHl){:.f4 .grow .no-underline .br-pill .ph3 .pv3 .mv3 .mb2 .dib .white .bg-dark-pink}
+[Register for Taphouse TV Dinners!](https://airtable.com/shr011U0OscveCvHl){:.f4 .grow .no-underline .br-pill .ph3 .pv3 .mv3 .mb2 .dib .white .bg-tv-pink}
 {:.tc}
 
 If you need support to complete this form then please call ACORN on [0754 9673865](tel:07549673865). More information about [Health and Safety](/health-safety) is available.
@@ -54,7 +54,7 @@ If you need support to complete this form then please call ACORN on [0754 967386
 # Can you help?
 
 ## Donations
- 
+
 We welcome donations to support this project, and receive no support from Manchester City Council or other regional funders. Please send them directly to the Old Abbey Taphouse (registered as Galivantes Productions Ltd) via PayPal using the button below.
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
