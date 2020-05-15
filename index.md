@@ -13,6 +13,8 @@ The [Old Abbey Taphouse](http://theoldabbeytaphouse.co.uk/), [Geeks for Social C
 
 We can also help with collecting groceries, provide checkin calls, help with gas and electric payment, pick up your prescriptions for you, and other services on request. We are run entirely by volunteers so may not be able to fulfil all requests.
 
+We are currently delivering once a week on a Tuesday. Deliveries include a meal (generally meat or vegan options), some sides or starters, and donated sweet treats from local supermakets that are nearing their best before date.
+
 ## Eligibility
 
 We welcome registrations from M15 postcodes and people slightly outside this area who have a high need for the service. We are currently piloting the scheme and slowly building to meet demand so might not be able to meet all requests straight away.
@@ -21,21 +23,33 @@ The service is open to everyone in these areas regardless of age or ability.
 
 ## Registration
 
-To register for the service, please fill the form below. A volunteer from ACORN will contact you to confirm your details. We will send you a followup form when we have a better idea of demand and our supply lines are confirmed.
+To register for the service, please fill the form below. We will phone you to confirm your details and welcome you to the project.
 
 [Register for Taphouse TV Dinners!](https://airtable.com/shr011U0OscveCvHl){:.f4 .grow .no-underline .br-pill .ph3 .pv3 .mv3 .mb2 .dib .white .bg-dark-pink}
 {:.tc}
 
-If you need support to complete this form then please call ACORN on [0754 9673865](tel:07549673865).
+If you need support to complete this form then please call ACORN on [0754 9673865](tel:07549673865). More information about [Health and Safety](/health-safety) is available.
 
-## Health and safety information
+# Project updates
 
-We use a small team of volunteers who have a low chance of health complications from Covid-19. We are undertaking training on how to make food preperation as safe as possible and the use of masks and gloves. Food for each meal will be cooked by one person. Deliveries will be left outside doors with no contact made.
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-We intend to deliver food cold or frozen in the first instance but will aim to deliver hot food to those without the ability to reheat at home as the project develops. Information on how to reheat food will be sent out with each meal.
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-We will do our best to cater for all diets and allergies but please be aware we may not be able to cater for more complex needs.
+      <div class="date">
+        Written on {{ post.date | date: "%B %e, %Y" }}
+      </div>
 
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
 
 # Can you help?
 
@@ -44,15 +58,15 @@ We will do our best to cater for all diets and allergies but please be aware we 
 We welcome donations to support this project. Please send them directly to the Old Abbey Taphouse (registered as Galivantes Productions Ltd) via PayPal using the button below.
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="galivantes@gmail.com" />
-<input type="hidden" name="item_name" value="Taphouse TV Dinners" />
-<input type="hidden" name="currency_code" value="GBP" />
-<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+  <input type="hidden" name="cmd" value="_donations" />
+  <input type="hidden" name="business" value="galivantes@gmail.com" />
+  <input type="hidden" name="item_name" value="Taphouse TV Dinners" />
+  <input type="hidden" name="currency_code" value="GBP" />
+  <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+  <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
 </form>
 
-Donations can also be sent by bank transfer: 
+Donations can also be sent by bank transfer:
 
  * **Sort code:** 08 92 99
  * **Account number:** 65868410
@@ -60,8 +74,6 @@ Donations can also be sent by bank transfer:
 
 ## Supplies and volunteers
 
-{:.mb0}
+We are in need of some supplies to increase our food production, set up a community radio station, and start a newsletter. If you can provide any of the below then please get in touch with the relevant person. We can collect.
 
-We are in need of some supplies to increase our food production, set up a community radio station, and start a newsletter. If you can provide any of the below then please get in touch with the relevant person.
-
-<div id="wishlistTable"></div>
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrpBXhasbybORfX2?backgroundColor=purpleLight&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>

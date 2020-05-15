@@ -5,7 +5,7 @@ export const getAirtable = async table => {
     `${AIRTABLE_URL}/${table.name}?${table.fields}&view=Public%20view`,
     {
       headers: {
-        Authorization: `Bearer ${AIRTABLE_API_KEY}`,
+        Authorization: `Bearer ${AIRTABLE_API_KEY_HACK}`,
       },
     },
   );
