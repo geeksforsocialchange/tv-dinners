@@ -54,8 +54,8 @@ If you need support to complete this form then please call ACORN on [0754 967386
 # Can you help?
 
 ## Donations
-
-We welcome donations to support this project. Please send them directly to the Old Abbey Taphouse (registered as Galivantes Productions Ltd) via PayPal using the button below.
+ 
+We welcome donations to support this project, and receive no support from Manchester City Council or other regional funders. Please send them directly to the Old Abbey Taphouse (registered as Galivantes Productions Ltd) via PayPal using the button below.
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_donations" />
